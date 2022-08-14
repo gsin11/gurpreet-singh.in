@@ -48,18 +48,16 @@
       background-size: cover;
       min-height: 100vh;
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
+      flex-direction: column;
     }
 
     footer {
       width: 100%;
-      display: block;
       text-align: center;
       font-size: 17.5px;
       color: var(--color-2);
       line-height: 75px;
-      position: absolute;
-      bottom: 0;
     }
 
     div.main {
@@ -132,17 +130,6 @@
     @media only screen and (max-width: 444.44px) {
       div.main {
         width: 90%;
-      }
-    }
-
-    @media only screen and (max-height: 653.88px) and (max-width: 444.44px) {
-      div.main {
-        margin: 5vw 0;
-        margin-bottom: 0;
-      }
-
-      footer {
-        position: relative;
       }
     }
 
