@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta
-    content="gurpreet, gurpreet singh from frankfurt, gurpreet singh from germany, senior manager front-end, interactive, developer, sapient, cv, experience technology, publicis sapient"
+    content="gurpreet, gurpreet singh from frankfurt, gurpreet singh frankfurt, gurpreet singh germany, senior manager front-end, interactive, developer, sapient, cv, experience technology, publicis sapient"
     name="keywords">
   <meta content="Gurpreet Singh, Senior Manager Experience Engineering from Publicis Sapient" name="description">
   <link rel="canonical" href="https://gsin.in/">
@@ -26,128 +26,136 @@
   <style>
     /* global */
     :root {
-      --color-light: #fefefe;
-      --color-dark: #111;
-      --link-color: #004de7;
+      --color-1: #414f57;
+      --color-2: #c8cccf;
+      --color-3: #f2f9f9;
     }
 
-    .sr-only {
-      position: absolute;
-      left: -10000px;
-      top: auto;
-      width: 1px;
-      height: 1px;
-      overflow: hidden;
-    }
-
-    .grid-2 {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+    * {
+      margin: 0;
+      padding: 0;
     }
 
     body {
-      margin: 0;
-      padding: 0;
-      font-family: Helvetica, Arial, sans-serif;
-      background-color: var(--color-light);
-      color: var(--color-dark);
-    }
-
-    .profile-pic {
-      border-radius: 50%;
-      width: 250px;
-    }
-
-    h2 {
-      font-size: 1.7rem;
-      margin-bottom: 10px;
-      color: var(--color-dark);
-    }
-
-    a {
-      color: var(--link-color);
-      text-decoration: none;
-    }
-
-    /* section 1 */
-    .section-1 {
-      padding-top: 40vh;
+      font-family: "Source Sans Pro", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      text-transform: uppercase;
+      font-weight: 300;
+      letter-spacing: 4px;
       text-align: center;
+      color: var(--color-1);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../bg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
     }
 
-    .section-1 p {
-      font-size: 1.1rem;
+    footer {
+      width: 100%;
+      display: block;
+      text-align: center;
+      font-size: 17.5px;
+      color: var(--color-2);
+      line-height: 75px;
+      position: absolute;
+      bottom: 0;
+    }
+
+    div.main {
+      width: 400px;
+      background-color: var(--color-3);
+      border-radius: 5px;
+      text-align: center;
+      box-sizing: border-box;
+      padding: 50px 25px;
+      display: flex;
+      flex-direction: column;
+      place-self: center;
+    }
+
+    div.main section.photo {
+      height: 250px;
+    }
+
+    div.main section.photo img {
+      height: 250px;
+      border-radius: 50%;
+    }
+
+    div.main section.info {
+      height: 115px;
+    }
+
+    div.main section.info h1 {
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 50px;
+      padding-top: 25px;
       padding-bottom: 10px;
-      margin: 0;
     }
 
-    .exp {
-      margin-bottom: 2rem;
+    div.main section.info h2 {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 30px;
     }
 
-    .section-1 a {
-      font-size: 1.5rem;
-      padding: 10px;
+    div.main section.links {
+      height: 100px;
+      padding-top: 37.5px;
+      padding-bottom: 12.5px;
+      box-sizing: border-box;
     }
 
-    /* section 2 */
-    .section-2 {
-      padding-top: 10vh;
-      width: 70%;
+    div.main section.links a {
+      height: 50px;
+      text-decoration: none;
+      display: inline-block;
+      margin: 0 7.5px;
     }
 
-    .section-2 p {
-      font-size: 1.1rem;
-      padding-bottom: 10px;
-      margin: 0;
+    div.main section.links a svg {
+      height: 50px;
+      width: auto;
     }
 
-    .section-2 a {
-      padding: 5px;
-      font-size: 1.2rem;
-      padding-left: 0;
+    div.main section.links a svg path {
+      fill: var(--color-2);
+      transition: fill 0.25s ease;
     }
 
-    /* animations / utilities */
-    .section-2 a:hover {
-      font-size: 1.3rem;
-      color: var(--color-dark);
-      cursor: pointer;
-      transition: 0.2s;
+    div.main section.links a:hover svg path {
+      fill: var(--color-1);
     }
 
-    .section-1 a:hover {
-      color: var(--color-dark);
-      cursor: pointer;
-      transition: 0.3s;
+    @media only screen and (max-width: 444.44px) {
+      div.main {
+        width: 90%;
+      }
     }
 
-    /* media queres */
-    @media(max-width:780px) {
-      .grid-2 {
-        grid-template-columns: 1fr;
+    @media only screen and (max-height: 653.88px) and (max-width: 444.44px) {
+      div.main {
+        margin: 5vw 0;
+        margin-bottom: 0;
       }
 
-      .section-1 {
-        padding: 0;
-        padding-top: 5rem;
-      }
-
-      .section-2 {
-        padding: 0;
-        padding-left: 1.5rem;
-        padding-top: 2rem;
+      footer {
+        position: relative;
       }
     }
 
     @media (prefers-color-scheme:dark) {
       :root {
-        --color-light: #111;
-        --color-dark: #fefefe;
-        --link-color: #6B9CFF;
+        --color-1: #F73D93;
+        --color-2: #fefefe;
+        --color-3: #413F42;
       }
     }
   </style>
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" rel="stylesheet">
   <script type="application/ld+json">
     {
       "@context": "http://schema.org",
@@ -155,7 +163,7 @@
       "name": "Gurpreet Singh",
       "description": "Gurpreet Singh, Senior Manager Experience Engineering from Publicis Sapient",
       "url": "https://gurpreet-singh.in",
-      "sameAs": ["//learnwithgurpreet.com", "//linkedin.com/in/gsin11/", "//github.com/gsin11", "//mastodon.social/@gsin"],
+      "sameAs": ["//learnwithgurpreet.com", "//linkedin.com/in/gsin11/", "//github.com/learnwithgurpreet, "//mastodon.social/@gsin"],
       "image": "https://www.gurpreet-singh.in/gurpreet-singh500.jpg",
       "creator": {
         "@type": "Person",
@@ -163,7 +171,7 @@
         "email": "hello@gsin.in",
         "image": "https://www.gurpreet-singh.in/gurpreet-singh500.jpg",
         "url": "https://gurpreet-singh.in",
-        "sameAs": ["//learnwithgurpreet.com", "//linkedin.com/in/gsin11/", "//github.com/gsin11", "//mastodon.social/@gsin"]
+        "sameAs": ["//learnwithgurpreet.com", "//linkedin.com/in/gsin11/", "//github.com/learnwithgurpreet", "//mastodon.social/@gsin"]
       }
     }
   </script>
@@ -171,58 +179,46 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
-    integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 </head>
 
 <body>
-  <div class="grid-2">
-    <aside class="section-1">
+  <div class="main">
+    <section class="photo">
       <img srcset="/gurpreet-singh250.jpg 400w, /gurpreet-singh500.jpg 600w, /gurpreet-singh500.jpg 2x"
         src="/gurpreet-singh250.jpg" height="250" width="250" alt="Gurpreet Singh - profile" class="profile-pic" />
-      <h1>Gurpreet Singh</h1>
-      <p>Frankfurt am Main, Germany.</p>
-      <a href="https://mastodon.social/@gsin" rel="nofollow"><i class="fab fa-mastodon"></i><span
-          class="sr-only">mastodon.social</span></a>
-      <a href="https://linkedin.com/in/gsin11" rel="nofollow"><i class="fab fa-linkedin"></i><span
-          class="sr-only">linkedin.com</span></a>
-      <a href="https://github.com/gsin11" rel="nofollow"><i class="fab fa-github"></i><span
-          class="sr-only">github.com</span></a>
-      <a href="https://learnwithgurpreet.com" rel="nofollow"><i class="fab fa-readme"></i><span class="sr-only">blog @ learnwithgurpreet.com</span></a>
-    </aside>
-    <main class="section-2">
-      <h2>About</h2>
-      <p>I'm Gurpreet Singh, a Senior Architect in Frontend Technology working with PublicisSapient. Having more than 12 years of experience in the area of JavaScript, HTML5, and CSS3. I like creating and using specialized tools for making development processes as efficient as possible. I have the experience to work with big projects and big development teams.</p>
-      <h2>Experience</h2>
-      <article>
-        <section class="exp">
-          <h3>Senior Manager, Experience Engineering</h3>
-          <time datetime="2012-04-09 00:00">April 2012</time> – <span>Today</span>
-          <h4><a href="https://www.PublicisSapient.com/">Publicis Sapient</a></h4>
-          <p>ReactJS, NodeJS, DevOps, Accessibility, Search SEO, Global Distributed Delivery, Experience
-            Engineering Lead, Agile, Mobile Delivery, Performance and Tooling</p>
-        </section>
-        <section class="exp">
-          <h3>Software Engineer (PHP)</h3>
-          <time datetime="2010-06-01 00:01">June 2010</time> - <time datetime="2012-01-31 00:00">January 2012</time>
-          <h4><a href="http://ratiocinativesolutions.com/">Ratiocinative Solutions Pvt. Ltd</a></h4>
-          <p>PHP, MYSQL, HTML, CSS, JavaScript</p>
-        </section>
-        <section>
-          <h3>Web Programmer (PHP)</h3>
-          <time datetime="2009-11-01 00:00">November 2009</time> – <time datetime="2010-06-01 00:00">June 2010</time>
-          <h4><a href="https://www.akaalwebsoft.com/">Akaal Websoft (P) Ltd</a></h4>
-          <p>Startup, PHP, MYSQL, HTML, CSS, JavaScript</p>
-        </section>
-      </article>
-      <h2>Skills</h2>
-      <p>Leadership, Growth Mindset, Team Management, Micro-frontends, User Experience, Web Performance, Agile
-        Methodologies</p>
-      <h2>Contact</h2>
-      <p><a href="https://learnwithgurpreet.com/" rel="nofollow">learnwithgurpreet.com</a></p>
-      <p><a href="mailto:hello@gsin.in">hello@gsin.in</a></p>
-    </main>
+    </section>
+    <section class="info">
+      <h1 class="name">Gurpreet Singh</h1>
+      <h2>Full-Stack Architect</h2>
+    </section>
+    <section class="links">
+      <a href="mailto:learnwithgurpreet@gmail.com" rel="nofollow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path
+            d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z" />
+        </svg>
+      </a><a href="https://github.com/learnwithgurpreet" rel="nofollow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path
+            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+        </svg>
+      </a><a href="https://learnwithgurpreet.com" rel="nofollow">
+        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd"
+          clip-rule="evenodd">
+          <path
+            d="M12.02 0c6.614.011 11.98 5.383 11.98 12 0 6.623-5.376 12-12 12-6.623 0-12-5.377-12-12 0-6.617 5.367-11.989 11.981-12h.039zm3.694 16h-7.427c.639 4.266 2.242 7 3.713 7 1.472 0 3.075-2.734 3.714-7m6.535 0h-5.523c-.426 2.985-1.321 5.402-2.485 6.771 3.669-.76 6.671-3.35 8.008-6.771m-14.974 0h-5.524c1.338 3.421 4.34 6.011 8.009 6.771-1.164-1.369-2.059-3.786-2.485-6.771m-.123-7h-5.736c-.331 1.166-.741 3.389 0 6h5.736c-.188-1.814-.215-3.925 0-6m8.691 0h-7.685c-.195 1.8-.225 3.927 0 6h7.685c.196-1.811.224-3.93 0-6m6.742 0h-5.736c.062.592.308 3.019 0 6h5.736c.741-2.612.331-4.835 0-6m-12.825-7.771c-3.669.76-6.671 3.35-8.009 6.771h5.524c.426-2.985 1.321-5.403 2.485-6.771m5.954 6.771c-.639-4.266-2.242-7-3.714-7-1.471 0-3.074 2.734-3.713 7h7.427zm-1.473-6.771c1.164 1.368 2.059 3.786 2.485 6.771h5.523c-1.337-3.421-4.339-6.011-8.008-6.771" />
+        </svg>
+      </a><a href="https://linkedin.com/in/gsin11" rel="nofollow"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+          height="24" viewBox="0 0 24 24">
+          <path
+            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z" />
+        </svg>
+      </a>
+    </section>
   </div>
+  <footer>
+    &copy; Gurpreet Singh
+  </footer>
 </body>
 
 </html>
