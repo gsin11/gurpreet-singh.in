@@ -36,6 +36,10 @@
       padding: 0;
     }
 
+    a {
+      color: var(--color-2);
+    }
+
     body {
       font-family: "Source Sans Pro", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       text-transform: uppercase;
@@ -70,6 +74,7 @@
       display: flex;
       flex-direction: column;
       place-self: center;
+      margin-top: 1rem;
     }
 
     div.main section.photo {
@@ -139,6 +144,10 @@
         --color-2: #fefefe;
         --color-3: #413F42;
       }
+
+      a {
+        color: var(--color-1);
+      }
     }
   </style>
 
@@ -155,7 +164,7 @@
       "creator": {
         "@type": "Person",
         "name": "Gurpreet Singh",
-        "email": "hello@gsin.in",
+        "email": "learnwithgurpreet@gmail.com",
         "image": "https://www.gurpreet-singh.in/gurpreet-singh500.jpg",
         "url": "https://gurpreet-singh.in",
         "sameAs": ["//learnwithgurpreet.com", "//linkedin.com/in/gsin11/", "//github.com/learnwithgurpreet", "//mastodon.social/@gsin"]
@@ -204,7 +213,12 @@
     </section>
   </div>
   <footer>
-    &copy; Gurpreet Singh
+    <p>&copy; Gurpreet Singh</p>
+    <p style="font-size: 0.5rem;">Photo by <a
+        href="https://unsplash.com/@jeisblack?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jason
+        Blackeye</a> on <a
+        href="https://unsplash.com/s/photos/mountains?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    </p>
   </footer>
 </body>
 
