@@ -3,19 +3,19 @@
 @tailwind utilities;
 
 .link {
-  @apply text-mantis-700 hover:text-mantis-500 dark:text-mantis-300 dark:hover:text-mantis-400;
+  @apply text-husky-800 hover:text-husky-500 dark:text-husky-300 dark:hover:text-husky-400 underline;
 }
 
 .highlight {
-  @apply bg-mantis-100 dark:bg-mantis-950;
+  @apply bg-husky-100 dark:bg-husky-950;
 }
 
 .highlight-with-border {
-  @apply border bg-mantis-100 dark:bg-mantis-950 border-mantis-400 dark:border-mantis-600;
+  @apply border bg-husky-100 dark:bg-husky-950 border-husky-400 dark:border-husky-600;
 }
 
-.history:before {
-  @apply absolute block top-0 bottom-0 left-1/2 w-px -translate-x-px bg-mantis-400 dark:bg-mantis-600;
+.work:before {
+  @apply absolute block top-0 bottom-0 left-1/2 w-px -translate-x-px bg-husky-400 dark:bg-husky-600;
   content: "";
 }
 
@@ -27,26 +27,26 @@
   @apply bg-zinc-100 dark:bg-zinc-50;
 }
 
-.history-entry.current .dot-bg {
-  @apply bg-mantis-400 dark:bg-mantis-300;
+.work-entry.current .dot-bg {
+  @apply bg-husky-400 dark:bg-husky-300;
 }
 
-.history-entry.current .dot {
-  @apply bg-mantis-800 dark:bg-mantis-700;
+.work-entry.current .dot {
+  @apply bg-husky-800 dark:bg-husky-700;
 }
 
-.history-entry:nth-child(odd) {
+.work-entry:nth-child(odd) {
   @apply self-end pl-12;
 }
 
-.history-entry:nth-child(even) {
+.work-entry:nth-child(even) {
   @apply self-start pr-12 text-right;
 }
 
-.history-entry:nth-child(odd) .dot-bg {
+.work-entry:nth-child(odd) .dot-bg {
   @apply left-0 -translate-x-2/4;
 }
 
-.history-entry .dot-bg {
+.work-entry .dot-bg {
   @apply right-0 translate-x-1/2 bg-zinc-400 dark:bg-zinc-500;
 }

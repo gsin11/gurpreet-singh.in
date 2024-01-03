@@ -8,27 +8,6 @@
     <meta content="{{ keywords }}" name="keywords">
     <meta content="{{ description }}" name="description">
 
-    {# <style type="text/css">
-      :root {
-        --primary-color: {{ cssPrimaryColor }};
-        --secondary-color: {{ cssSecondaryColor }};
-        --tertiary-color: {{ cssTertiaryColor }};
-        --quaternary-color: {{ cssQuaternaryColor }};
-        --thickness: 1px;
-        --border: var(--thickness) solid var(--primary-color);
-        --transition: ease-in-out 150ms;
-      }
-
-      @media (prefers-color-scheme: dark) {
-        :root {
-          --primary-color: {{ cssTertiaryColor }};
-          --tertiary-color: {{ cssPrimaryColor }};
-          --quaternary-color: var(--tertiary-color);
-          --border: var(--thickness) solid var(--primary-color);
-        }
-      }
-    </style> #}
-
     <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/favicons/apple-touch-icon.png' }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicons/favicon-32x32.png' }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicons/favicon-16x16.png' }}">
@@ -68,7 +47,7 @@
       }
     </script>
   </head>
-  <body class="antialiased text-mantis-950 bg-zinc-50 dark:bg-zinc-950 dark:text-mantis-50 leading-normal font-text text-front transition-color duration-200 ease-in-out">
+  <body class="antialiased text-husky-950 bg-zinc-50 dark:bg-zinc-950 dark:text-husky-50 leading-normal font-text text-front transition-color duration-200 ease-in-out">
     {% include "partials/_header.njk" %}
     <div class="md:max-w-screen-sm lg:max-w-screen-xl mx-auto px-4 flex flex-wrap pt-4 my-8">
       {% include "partials/_aside.njk" %}
@@ -77,6 +56,7 @@
         {% include "partials/_skills.njk" %}
         {% include "partials/_about.njk" %}
         {% include "partials/_work.njk" %}
+        {% include "partials/_projects.njk" %}
         {{content | safe}}
       </main>
     </div>
