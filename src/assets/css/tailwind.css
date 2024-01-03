@@ -7,11 +7,11 @@
 }
 
 .highlight {
-  @apply bg-husky-100 dark:bg-husky-950;
+  @apply bg-husky-100 dark:bg-husky-900;
 }
 
 .highlight-with-border {
-  @apply border bg-husky-100 dark:bg-husky-950 border-husky-400 dark:border-husky-600;
+  @apply border bg-husky-100 dark:bg-husky-900 border-husky-400 dark:border-husky-600;
 }
 
 .work:before {
@@ -24,15 +24,11 @@
 }
 
 .bg-back-light {
-  @apply bg-zinc-100 dark:bg-zinc-50;
-}
-
-.work-entry.current .dot-bg {
-  @apply bg-husky-400 dark:bg-husky-300;
+  @apply bg-husky-100 dark:bg-husky-50;
 }
 
 .work-entry.current .dot {
-  @apply bg-husky-800 dark:bg-husky-700;
+  @apply bg-husky-800 dark:bg-husky-800;
 }
 
 .work-entry:nth-child(odd) {
@@ -48,5 +44,5 @@
 }
 
 .work-entry .dot-bg {
-  @apply right-0 translate-x-1/2 bg-zinc-400 dark:bg-zinc-500;
+  @apply right-0 translate-x-1/2 bg-husky-400 dark:bg-husky-500;
 }
