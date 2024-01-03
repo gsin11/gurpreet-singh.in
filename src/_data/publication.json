@@ -1,0 +1,14 @@
+[
+  {
+    "title": "7 ways to make your website more accessible and sustainable",
+    "date": "2022-05",
+    "link": "https://medium.com/engineered-publicis-sapient/7-ways-to-make-your-website-more-accessible-and-sustainable-1dcb69c3fc50",
+    "details": "Another article in Engineered @ Publicis Sapient. This time, I wrote about how to make your website more accessible and sustainable."
+  },
+  {
+    "title": "Do we really need class components anymore?",
+    "date": "2022-05",
+    "link": "https://medium.com/engineered-publicis-sapient/do-we-really-need-class-components-anymore-ef6cf7f25cf3",
+    "details": "After the introduction of React Hooks, class components are no longer the only way to create stateful components in React. In this article, we will explore the differences between class components and functional components with hooks, and why you should consider using functional components with hooks instead of class components."
+  }
+]
