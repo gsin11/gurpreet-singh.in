@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="{{ keywords }}" name="keywords">
+    <meta content="{{ description }}" name="description">
+
+    {# <style type="text/css">
+      :root {
+        --primary-color: {{ cssPrimaryColor }};
+        --secondary-color: {{ cssSecondaryColor }};
+        --tertiary-color: {{ cssTertiaryColor }};
+        --quaternary-color: {{ cssQuaternaryColor }};
+        --thickness: 1px;
+        --border: var(--thickness) solid var(--primary-color);
+        --transition: ease-in-out 150ms;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --primary-color: {{ cssTertiaryColor }};
+          --tertiary-color: {{ cssPrimaryColor }};
+          --quaternary-color: var(--tertiary-color);
+          --border: var(--thickness) solid var(--primary-color);
+        }
+      }
+    </style> #}
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/favicons/apple-touch-icon.png' }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicons/favicon-32x32.png' }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicons/favicon-16x16.png' }}">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="canonical" href="https://www.learnwithgurpreet.com/">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Gurpreet Singh">
+    <meta property="og:description" content="Gurpreet Singh, Senior Manager Experience Engineering from Publicis Sapient">
+    <meta property="og:url" content="https://www.gurpreet-singh.in">
+    <meta property="og:site_name" content="gurpreet-singh.in">
+    {# <meta property="og:image" content="https://www.gurpreet-singh.in/gurpreet-singh500.jpg"> #}
+    <meta property="og:image:width" content="500">
+    <meta property="og:image:height" content="500">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta content="All" name="audience">
+    <meta content="index,follow" name="robots">
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | url }}">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "WebPage",
+        "name": "{{ author.name }}",
+        "description": "{{ author.name }}, Senior Manager Experience Engineering from Publicis Sapient",
+        "url": "https://www.gurpreet-singh.in",
+        "sameAs": ["//www.learnwithgurpreet.com", "//linkedin.com/in/gsin11/", "//github.com/learnwithgurpreet, "//fosstodon.org/@GurpreetSingh", "//gsingh.de"],
+        "image": "https://www.gurpreet-singh.in/gurpreet-singh500.jpg",
+        "creator": {
+          "@type": "Person",
+          "name": "Gurpreet Singh",
+          "email": "social@gsingh.de",
+          "image": "https://www.gurpreet-singh.in/gurpreet-singh500.jpg",
+          "url": "https://gurpreet-singh.in",
+          "sameAs": ["//www.learnwithgurpreet.com", "//linkedin.com/in/gsin11/", "//github.com/learnwithgurpreet", "//fosstodon.org/@GurpreetSingh", "//gsingh.de"]
+        }
+      }
+    </script>
+  </head>
+  <body class="antialiased text-mantis-950 bg-zinc-50 dark:bg-zinc-950 dark:text-mantis-50 leading-normal font-text text-front transition-color duration-200 ease-in-out">
+    {% include "partials/_header.njk" %}
+    <div class="md:max-w-screen-sm lg:max-w-screen-xl mx-auto px-4 flex flex-wrap pt-4 my-8">
+      {% include "partials/_aside.njk" %}
+      <main class="lg:w-2/3 lg:pl-8 xl:pl-12">
+        {% include "partials/_intro.njk" %}
+        {% include "partials/_skills.njk" %}
+        {% include "partials/_about.njk" %}
+        {% include "partials/_work.njk" %}
+        {{content | safe}}
+      </main>
+    </div>
+    {% include "partials/_footer.njk" %}
+  </body>
+</html>
