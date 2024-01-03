@@ -1,0 +1,18 @@
+<section class="pb-8">
+  <h3 class="font-header font-semibold text-md uppercase mb-6">Education</h3>
+  <div class="space-y-6 border-l-2 border-dashed border-l-husky-400 dark:border-l-husky-600">
+    {% for item in education %}
+      <div class="relative">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-husky-400 dark:text-husky-600" viewBox="0 0 16 16">
+          <path d="M2 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L7 13.101l-4.223 2.815A.5.5 0 0 1 2 15.5z"/>
+          <path d="M4.268 1A2 2 0 0 1 6 0h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L13 13.768V2a1 1 0 0 0-1-1z"/>
+        </svg>
+        <div class="ml-6">
+          <h4 class="font-bold">{{ item.certification }}</h4>
+          <p class="mt-2 text-sm">{{ item.org }}, {{ item.address }}</p>
+          <span class="mt-1 block text-sm font-semibold">{{ item.year }}</span>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
