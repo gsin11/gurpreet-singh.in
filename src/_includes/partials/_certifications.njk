@@ -7,7 +7,7 @@
         <div class="ml-6">
           <a href="{{ item.link }}" class="link" rel="nofollow" target="_blank"><h4 class="font-bold">{{ item.certification }}</h4></a>
           <p class="mt-1 text-sm font-semibold">{{ item.org }}</p>
-          <p class="mt-1 text-sm">{{ item.year }}</p>
+          <time datetime="{{ item.year }}" class="mt-1 text-sm">{{ item.year }}</time>
         </div>
       </div>
     {% endfor %}

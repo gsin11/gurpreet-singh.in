@@ -7,7 +7,7 @@
         <div class="ml-6">
           <h4 class="font-bold">{{ item.certification }}</h4>
           <p class="mt-2 text-sm">{{ item.org }}, {{ item.address }}</p>
-          <span class="mt-1 block text-sm font-semibold">{{ item.year }}</span>
+          <time datetime="{{ item.year_start }}" class="mt-1 text-sm font-semibold">{{ item.year_start }}</time> - <time datetime="{{ item.year_end }}" class="mt-1 text-sm font-semibold">{{ item.year_end }}</time>
         </div>
       </div>
     {% endfor %}

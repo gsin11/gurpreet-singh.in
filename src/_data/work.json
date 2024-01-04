@@ -2,27 +2,31 @@
   {
     "companyName": "Publicis Sapient",
     "title": "Senior Manager Experience Engineering",
-    "time": "Apr 2012 - Present",
+    "time_start": "Apr 2012",
+    "time_end": "Present",
     "link": "https://www.publicissapient.com/",
     "isCurrent": true
   },
   {
     "companyName": "Learn with Gurpreet (Blog)",
     "title": "Technical Writer",
-    "time": "Sep 2020 - Present",
+    "time_start": "Sep 2020",
+    "time_end": "Present",
     "link": "https://www.learnwithgurpreet.com/",
     "isCurrent": true
   },
   {
     "companyName": "Ratiocinative Solutions (Netzsolutions Inc.)",
     "title": "Software Engineer (PHP)",
-    "link": "http://www.ratiocinativesolutions.com/",
-    "time": "Jun 2010 - Jan 2012"
+    "time_start": "Jun 2010",
+    "time_end": "Jan 2012",
+    "link": "http://www.ratiocinativesolutions.com/"
   },
   {
     "companyName": "Akaal Websoft Pvt. Ltd.",
     "title": "Web Programmer (PHP)",
-    "link": "https://www.akaalwebsoft.com/",
-    "time": "Nov 2009 - Jun 2010"
+    "time_start": "Nov 2009",
+    "time_end": "Jun 2010",
+    "link": "https://www.akaalwebsoft.com/"
   }
 ]
