@@ -1,6 +1,10 @@
+---
+permalink: /site.webmanifest
+eleventyExcludeFromCollections: true
+---
 {
-  "name": "www.gurpreet-singh.in",
-  "short_name": "gurpreet-singh",
+  "name": "{{ site.title }}",
+  "short_name": "{{ author.shortName }}",
   "icons": [
     {
       "src": "/assets/images/favicons/android-chrome-192x192.png",
@@ -13,7 +17,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#fffbeb",
-  "background_color": "#451a03",
+  "theme_color": "{{ site.themeColor }}",
+  "background_color": "{{ site.backgroundColor }}",
   "display": "standalone"
 }

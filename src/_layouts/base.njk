@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ site.lang }}">
   <head>
     <meta charset="UTF-8">
     <title>{{ site.title or title }}</title>
@@ -27,25 +27,6 @@
     <meta content="All" name="audience">
     <meta content="index,follow" name="robots">
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | url }}">
-    <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "WebPage",
-        "name": "{{ author.name }}",
-        "description": "{{ author.name }}, Senior Manager Experience Engineering from Publicis Sapient",
-        "url": "https://www.gurpreet-singh.in",
-        "sameAs": ["//www.learnwithgurpreet.com", "//linkedin.com/in/gsin11/", "//github.com/learnwithgurpreet, "//fosstodon.org/@GurpreetSingh", "//gsingh.de"],
-        "image": "https://www.gurpreet-singh.in/gurpreet-singh500.jpg",
-        "creator": {
-          "@type": "Person",
-          "name": "Gurpreet Singh",
-          "email": "social@gsingh.de",
-          "image": "https://www.gurpreet-singh.in/gurpreet-singh500.jpg",
-          "url": "https://gurpreet-singh.in",
-          "sameAs": ["//www.learnwithgurpreet.com", "//linkedin.com/in/gsin11/", "//github.com/learnwithgurpreet", "//fosstodon.org/@GurpreetSingh", "//gsingh.de"]
-        }
-      }
-    </script>
   </head>
   <body class="antialiased text-husky-950 bg-husky-50 dark:bg-husky-950 dark:text-husky-50 leading-normal font-text text-front transition-color duration-200 ease-in-out">
     {% include "partials/_header.njk" %}
@@ -63,5 +44,99 @@
       </main>
     </div>
     {% include "partials/_footer.njk" %}
+    <script id="CV-Data" type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "{{ author.name }}",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "{{ author.address.streetAddress }}",
+          "addressLocality": "{{ author.address.addressLocality }}",
+          "addressRegion": "{{ author.address.addressRegion }}",
+          "postalCode": "{{ author.address.postalCode }}",
+          "addressCountry": "{{ author.address.addressCountry }}"
+        },
+        "url": "{{ site.url }}",
+        "telephone": "{{ author.telephone }}",
+        "email": "{{ author.email }}",
+        "jobTitle": "{{ author.title }}",
+        "sameAs": [
+          {%- for sameAs in author.connect | reverse %}
+            "{{ sameAs.url }}"{% if not loop.last %},{% endif %}
+          {%- endfor %}
+        ],
+        "worksFor": [
+          {%- for worksFor in author.worksFor | reverse %}
+            {
+              "@type": "Organization",
+              "name": "{{ worksFor.companyName }}",
+              "sameAs": "{{ worksFor.link }}",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "{{ worksFor.address.addressLocality }}, {{ worksFor.address.addressRegion }}, {{ worksFor.address.addressCountry }}",
+                "postalCode": "{{ worksFor.address.postalCode }}",
+                "streetAddress": "{{ worksFor.address.streetAddress }}"
+              }
+            }{% if not loop.last %},{% endif %}
+          {%- endfor %}
+        ],
+        "alumniOf": [
+          {%- for alumniOf in author.alumniOf | reverse %}
+            {
+              "@type": "Role",
+              "startDate": "{{ alumniOf.year_start }}",
+              "endDate": "{{ alumniOf.year_end }}",
+              "roleName": "Student",
+              "alumniOf": {
+                "@type": "EducationalOrganization",
+                "name": "{{ alumniOf.org }}",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "{{ alumniOf.address.addressLocality }}",
+                  "addressRegion": "{{ alumniOf.address.addressRegion }}",
+                  "addressCountry": "{{ alumniOf.address.addressCountry }}"
+                }
+              }
+            }{% if not loop.last %},{% endif %}
+          {%- endfor %}
+        ],
+        "hasCredential": [
+          {%- for credential in author.hasCredential | reverse %}
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "{{ credential.certification }}",
+              "dateIssued": "{{ credential.year }}",
+              "url": "{{ credential.link }}",
+              "recognizedBy": {
+                "@type": "Organization",
+                "name": "{{ credential.org }}",
+                "description": "{{ credential.certification }}"
+              }
+            }{% if not loop.last %},{% endif %}
+          {%- endfor %}
+        ],
+        "knowsAbout": [
+          {%- for skill in author.skills | reverse %}
+            {
+              "@type": "Thing",
+              "name": "{{ skill.type }}"
+            }{% if not loop.last %},{% endif %}
+          {%- endfor %}
+        ],
+        "hasPublished": [
+          {%- for publish in author.publishes | reverse %}
+            {
+              "@type": "CreativeWork",
+              "name": "{{ publish.title }}",
+              "headline": "{{ publish.title }}",
+              "datePublished": "{{ publish.date }}",
+              "description": "{{ publish.details }}",
+              "url": "{{ publish.link }}"
+            }{% if not loop.last %},{% endif %}
+          {%- endfor %}
+        ]
+      }
+    </script>
   </body>
 </html>

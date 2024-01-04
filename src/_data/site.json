@@ -2,6 +2,8 @@
   "name": "gurpreet-singh.in",
   "url": "https://www.gurpreet-singh.in",
   "canonical": "https://www.learnwithgurpreet.com",
-  "locale": "en_US",
-  "title": "Resume of Gurpreet Singh"
+  "lang": "en",
+  "title": "Resume of Gurpreet Singh",
+  "themeColor": "#fffbeb",
+  "backgroundColor": "#451a03"
 }
