@@ -10,21 +10,8 @@
   @apply bg-husky-100 dark:bg-husky-900;
 }
 
-.highlight-with-border {
-  @apply border bg-husky-100 dark:bg-husky-900 border-husky-400 dark:border-husky-600;
-}
-
-.work:before {
-  @apply absolute block top-0 bottom-0 left-1/2 w-px -translate-x-px bg-husky-400 dark:bg-husky-600;
-  content: "";
-}
-
-.dot-bg {
-  @apply top-1/2 -translate-y-1/2;
-}
-
-.bg-back-light {
-  @apply bg-husky-100 dark:bg-husky-50;
+.with-border {
+  @apply border border-husky-400 dark:border-husky-600;
 }
 
 .work-entry.current .dot {
@@ -41,8 +28,4 @@
 
 .work-entry:nth-child(odd) .dot-bg {
   @apply left-0 -translate-x-2/4;
-}
-
-.work-entry .dot-bg {
-  @apply right-0 translate-x-1/2 bg-husky-400 dark:bg-husky-500;
 }

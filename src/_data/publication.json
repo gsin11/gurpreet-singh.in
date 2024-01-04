@@ -1,5 +1,17 @@
 [
   {
+    "title": "World Wide Waste",
+    "date": "2023-10",
+    "link": "https://www.learnwithgurpreet.com/posts/world-wide-waste/",
+    "details": "I recently finished a book called World Wide Waste by Gerry McGovern. The author helps organizations reduce data waste by designing simpler, lighter, and more environmentally friendly websites and apps."
+  },
+  {
+    "title": "How to Setup Mac Terminal",
+    "date": "2023-03",
+    "link": "https://www.learnwithgurpreet.com/posts/how-to-setup-mac-terminal/",
+    "details": "Quick setup guide for Mac Terminal. This guide covers how to setup ZSH, Oh My ZSH, Powerlevel10k, and iTerm2."
+  },
+  {
     "title": "7 ways to make your website more accessible and sustainable",
     "date": "2022-05",
     "link": "https://medium.com/engineered-publicis-sapient/7-ways-to-make-your-website-more-accessible-and-sustainable-1dcb69c3fc50",
@@ -10,5 +22,11 @@
     "date": "2022-05",
     "link": "https://medium.com/engineered-publicis-sapient/do-we-really-need-class-components-anymore-ef6cf7f25cf3",
     "details": "After the introduction of React Hooks, class components are no longer the only way to create stateful components in React. In this article, we will explore the differences between class components and functional components with hooks, and why you should consider using functional components with hooks instead of class components."
+  },
+  {
+    "title": "NodeJS Beginner Course",
+    "date": "2021-08",
+    "link": "https://www.learnwithgurpreet.com/tags/nodejs-beginner-course/",
+    "details": "6 days course on NodeJS for beginners. This course covers the basics of NodeJS, ExpressJS, MongoDB, and Mongoose."
   }
 ]
