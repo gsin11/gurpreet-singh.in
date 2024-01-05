@@ -1,2 +1,1 @@
-# gurpreet-singh.in
-Dev portfolio
+# Resume of Gurpreet Singh
