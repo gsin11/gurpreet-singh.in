@@ -342,6 +342,12 @@
   ],
   "publishes": [
     {
+      "title": "State Handling in React JS",
+      "date": "2024-04",
+      "link": "https://www.learnwithgurpreet.com/posts/state-handling-in-react-js/",
+      "details": "In this article, we'll dive into the fundamentals of state handling in React, exploring various techniques and best practices for managing state within components."
+    },
+    {
       "title": "World Wide Waste",
       "date": "2023-10",
       "link": "https://www.learnwithgurpreet.com/posts/world-wide-waste/",
