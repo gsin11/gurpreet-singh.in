@@ -15,7 +15,7 @@
     "addressCountry": "Germany"
   },
   "telephone": "+49 152 18055291",
-  "website": "https://www.gurpreet-singh.in",
+  "website": "https://www.gurpreetsingh.me",
   "connect": [
     {
       "name": "linkedin",
@@ -342,21 +342,27 @@
   ],
   "publishes": [
     {
+      "title": "Mono Repo vs. Micro Front-ends with Next.js",
+      "date": "2024-07",
+      "link": "https://b.gurpreetsingh.me/posts/mono-repo-vs-micro-front-ends-with-nextjs/",
+      "details": "Each has its distinct advantages and potential drawbacks, and choosing the right one can be pivotal to the success of your project."
+    },
+    {
       "title": "State Handling in React JS",
       "date": "2024-04",
-      "link": "https://www.learnwithgurpreet.com/posts/state-handling-in-react-js/",
+      "link": "https://b.gurpreetsingh.me/posts/state-handling-in-react-js/",
       "details": "In this article, we'll dive into the fundamentals of state handling in React, exploring various techniques and best practices for managing state within components."
     },
     {
       "title": "World Wide Waste",
       "date": "2023-10",
-      "link": "https://www.learnwithgurpreet.com/posts/world-wide-waste/",
+      "link": "https://b.gurpreetsingh.me/posts/world-wide-waste/",
       "details": "I recently finished a book called World Wide Waste by Gerry McGovern. The author helps organizations reduce data waste by designing simpler, lighter, and more environmentally friendly websites and apps."
     },
     {
       "title": "How to Setup Mac Terminal",
       "date": "2023-03",
-      "link": "https://www.learnwithgurpreet.com/posts/how-to-setup-mac-terminal/",
+      "link": "https://b.gurpreetsingh.me/posts/how-to-setup-mac-terminal/",
       "details": "Quick setup guide for Mac Terminal. This guide covers how to setup ZSH, Oh My ZSH, Powerlevel10k, and iTerm2."
     },
     {
